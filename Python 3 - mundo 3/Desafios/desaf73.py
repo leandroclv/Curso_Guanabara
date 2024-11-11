@@ -1,0 +1,11 @@
+times = ('Atletico', 'Flamengo', 'Palmeiras', 'Fortaleza', 'Corinthians', 'Bragantino', 'Fluminense', 'América', 'Atletico_GO', 'Santos', 'Ceará', 'Internacional', 'São Paulo', 'Athetico_PR', 'Cuiabá', 'Juventude', 'Gremio', 'Bahia', 'Sport_Recife', 'Chapecoense')
+print('-=' * 50)
+print(f'\033[1;31mLista de times do brasileirão\033[m: {times}')
+print('-=' * 50)
+print(f'\033[1;32mOs 5 primeiros são\033[m: {times[:5]}')
+print('-=' * 50)
+print(f'\033[1;33mOs quatro últimos são\033[m: {times[-4:]}')
+print('-=' * 50)
+print(f'\033[1;34mTimes em ordem alfabética\033[m: {sorted(times)}')
+print('-=' * 50)
+print(f'\033[1;35mO Chapecoense está na\033[m {times.index("Chapecoense")+1}ª posição') #a formatação estavav dando problema pq tinha uma aspa simples dentro de outra aspa simples. Para resolver tive que colocar aspas duplas em Chapecoense
